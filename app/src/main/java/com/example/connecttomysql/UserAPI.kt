@@ -4,13 +4,11 @@ import com.google.gson.JsonObject
 import okhttp3.RequestBody
 import org.json.JSONObject
 import retrofit2.Call
-import retrofit2.http.Body
-import retrofit2.http.GET
-import retrofit2.http.Headers
-import retrofit2.http.POST
+import retrofit2.http.*
 
 interface UserAPI {
-    @Headers("Content-Type: application/json")
+//    @Headers("Content-Type: application/json")
+    @FormUrlEncoded
     @POST("addname.php")
-    fun addName(@Body userRequest: Request) : Call<UserResponse>
+    fun addName(@Field("name") userRequest: String) : Call<UserResponse>
 }

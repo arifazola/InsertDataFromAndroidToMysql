@@ -1,0 +1,4 @@
+com/example/connecttomysql/BuildConfig.java
+ com.example.connecttomysql.BuildConfig
+com/example/connecttomysql/DataBindingTriggerClass.java
+ com.example.connecttomysql.DataBindingTriggerClass
